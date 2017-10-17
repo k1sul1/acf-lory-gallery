@@ -3,7 +3,6 @@
  */
 document.addEventListener('DOMContentLoaded', function () {
   const createSlider = (el, numSlides = 3) => {
-    console.log(el, numSlides);
     return lory(el, {
       infinite: numSlides,
       enableMouseEvents: true,

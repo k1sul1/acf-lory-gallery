@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var createSlider = function createSlider(el) {
     var numSlides = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 3;
 
-    console.log(el, numSlides);
     return lory(el, {
       infinite: numSlides,
       enableMouseEvents: true,

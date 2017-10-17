@@ -9,9 +9,10 @@ while (have_posts()) { the_post(); ?>
   <article <?php post_class(); ?>>
     <?php the_title(); ?>
     <?php
-    echo do_shortcode("[acf_lory_gallery id='561' fullscreen='false' links='true']");
+    $id = get_the_ID();
+    echo do_shortcode("[acf_lory_gallery id='$id' fullscreen='false' links='true']");
     echo "<p>lorem ipsum</p>";
-    echo do_shortcode("[acf_lory_gallery id='561' fullscreen='true' links='true']");
+    echo do_shortcode("[acf_lory_gallery id='$id' fullscreen='true' links='true']");
     ?>
   </article>
 
