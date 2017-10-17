@@ -9,6 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
       ease: 'cubic-bezier(0.455, 0.03, 0.515, 0.955)',
     });
   };
+  const iDidNotPlanForThis = () => { // Only one col on phones.
+    return window.innerWidth <=  600 ? 1 : 3;
+  };
+
+  console.log(iDidNotPlanForThis());
 
   [].forEach.call(document.querySelectorAll('.acflory'), (slider) => {
     if (slider.getAttribute('data-fullscreen') === 'true') {
@@ -18,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const create = () => {
           const instance = createSlider(
             slider,
-            !wasFullscreen ? 1 : 3
+            !wasFullscreen ? 1 : iDidNotPlanForThis()
           );
 
           instance.slideTo(parseInt(link.getAttribute('data-index'), 10));
@@ -49,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
       addListeners(slider);
     }
 
-    slider._slider = createSlider(slider, 3);
+    slider._slider = createSlider(slider, iDidNotPlanForThis());
   });
 });
 

@@ -58,6 +58,11 @@ body {
 
     svg {
       fill: #000
+
+      @media (max-width: 600px) {
+        fill: #fff
+        width: 50px
+      }
     }
   }
 
@@ -91,6 +96,12 @@ body {
 
     @media (max-width: 768px) {
       height: mobileSliderHeight
+    }
+
+    @media (max-width: 600px) {
+      width: 100vw
+      margin: 0 20px
+      transform: none
     }
 
     &:nth-last-child(2),

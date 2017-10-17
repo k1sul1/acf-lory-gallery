@@ -66,28 +66,37 @@
 .acflory .next svg {
   fill: #000;
 }
+@media (max-width: 600px) {
 
-/* line 64 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+/* line 62 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+  .acflory .prev svg,
+  .acflory .next svg {
+    fill: #fff;
+    width: 50px;
+  }
+}
+
+/* line 69 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
 .acflory .next {
   right: 0;
   text-align: left;
   margin-right: 10px;
 }
 
-/* line 70 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+/* line 75 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
 .acflory .prev {
   left: 0;
   text-align: right;
   margin-left: 10px;
 }
 
-/* line 76 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+/* line 81 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
 .acflory .next svg,
 .acflory .prev svg {
   width: 25px;
 }
 
-/* line 80 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+/* line 85 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
 .acflory .item {
   width: 60vw;
   height: 635px;
@@ -101,17 +110,26 @@
 }
 @media (max-width: 768px) {
 
-/* line 92 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+/* line 97 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
   .acflory .item {
     height: 250px;
   }
 }
+@media (max-width: 600px) {
 
-/* line 96 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+/* line 101 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+  .acflory .item {
+    width: 100vw;
+    margin: 0 20px;
+    transform: none;
+  }
+}
 
-/* line 104 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+/* line 107 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
 
-/* line 108 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+/* line 115 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+
+/* line 119 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
 .acflory .item-link {
   position: absolute;
   top: 0;
@@ -120,7 +138,7 @@
   height: 100%;
 }
 
-/* line 116 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+/* line 127 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
 .acflory .item-desc {
   position: absolute;
   bottom: 20px;
@@ -130,7 +148,7 @@
   color: #000;
 }
 
-/* line 126 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+/* line 137 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
 .acflory.fullscreen {
   position: fixed;
   background: rgba(0,0,0,0.95);
@@ -141,7 +159,7 @@
   height: 100%;
 }
 
-/* line 135 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+/* line 146 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
 .acflory.fullscreen .item {
   width: 100vw;
   height: 100vh;
@@ -153,12 +171,12 @@
   margin: 0;
 }
 
-/* line 145 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+/* line 156 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
 .acflory.fullscreen .item-desc {
   color: #fff;
 }
 
-/* line 151 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+/* line 162 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
 .acflory.fullscreen .prev,
 .acflory.fullscreen .next {
   background: rgba(0,0,0,0);
@@ -170,14 +188,14 @@
   transition: 0.3s ease-in;
 }
 
-/* line 160 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+/* line 171 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
 .acflory.fullscreen .prev svg,
 .acflory.fullscreen .next svg {
   fill: #fff;
   width: 50px;
 }
 
-/* line 165 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+/* line 176 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
 .acflory.fullscreen .prev:hover,
 .acflory.fullscreen .next:hover,
 .acflory.fullscreen .prev:focus,
