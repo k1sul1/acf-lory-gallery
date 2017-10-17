@@ -1,0 +1,171 @@
+/**
+ * This file will never change, so feel free to overwrite it.
+ */
+
+body {
+
+}
+
+
+
+/**
+ * (optional) define here the style definitions which should be applied on the slider container
+ * e.g. width including further controls like arrows etc.
+ */
+.acflory {
+  sliderHeight = 635px
+  mobileSliderHeight = 250px
+  position: relative
+
+  .frame {
+    /**
+     * (optional) wrapper width, specifies width of the slider frame.
+     */
+    // width: 880px;
+
+    width: 100%
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    // height: sliderHeight;
+    z-index: 2;
+  }
+
+  .slides {
+    display: block;
+  }
+
+  li {
+    position: relative;
+    display: inline-block;
+
+    /**
+     * (optional) if the content inside the slide element has a defined size.
+     */
+    // width: 880px;
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px
+    display: block;
+    cursor: pointer;
+    z-index: 3
+    width: calc(20vw - 50px) // images have 100px margin
+
+    svg {
+      fill: #000
+    }
+  }
+
+  .next {
+    right: 0;
+    text-align: left
+    margin-right: 10px
+  }
+
+  .prev {
+    left: 0;
+    text-align: right
+    margin-left: 10px
+  }
+
+  .next svg, .prev svg {
+    width: 25px;
+  }
+
+  .item {
+    width: 60vw
+    // width: 60%
+    height: sliderHeight
+    background-size: cover
+    background-position: center
+    background-color: #ccc
+    margin: 0 50px;
+    transform: translateX(33.333%)
+    vertical-align: top
+    cursor: pointer
+
+    @media (max-width: 768px) {
+      height: mobileSliderHeight
+    }
+
+    &:nth-last-child(2),
+    &:last-child,
+    &:nth-child(4),
+    &:nth-child(2)
+    &:nth-child(1) {
+      // transform: translateX(33.333%) translateY(-100%)
+    }
+
+    &:nth-child(even) {
+      // transform: translateY(-100%) translateX(33.333%);
+    }
+
+    &-link {
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+    }
+
+    &-desc {
+      position: absolute
+      bottom: 20px
+      left: 20px
+      text-align: left
+      font-size: 28px
+      color: #000
+    }
+  }
+
+  &.fullscreen {
+    position: fixed
+    background: rgba(0, 0, 0, 0.95)
+    z-index: 10
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+    .item {
+      width: 100vw
+      height: 100vh
+      background-size: contain
+      background-repeat: no-repeat
+      transform: none
+      margin: 0
+      background: #000
+
+      &-desc {
+        color: #fff
+      }
+
+    }
+
+    .prev, .next {
+      background: rgba(0, 0, 0, 0.0)
+      height: 100%
+      top: 0
+      margin: 0;
+      line-height: 100vh
+      text-align: center
+      transition: 0.3s ease-in
+
+      svg {
+        fill: #fff
+        width: 50px
+      }
+
+      &:hover, &:focus {
+        background: rgba(0, 0, 0, 0.7)
+      }
+    }
+  }
+
+}
+

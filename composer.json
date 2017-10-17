@@ -1,0 +1,14 @@
+{
+    "name": "k1sul1/acf-lory-gallery",
+    "description": "",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christian Nikkanen",
+            "email": "hi@kisu.li"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

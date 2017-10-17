@@ -1,0 +1,186 @@
+
+/* line 297 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+
+/* line 1 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/node_modules/stylus/lib/functions/index.styl */
+
+/* line 1 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+/**
+ * This file will never change, so feel free to overwrite it.
+ */
+
+/* line 5 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+
+/* line 11 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+/**
+ * (optional) define here the style definitions which should be applied on the slider container
+ * e.g. width including further controls like arrows etc.
+ */
+
+/* line 15 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+.acflory {
+  position: relative;
+}
+
+/* line 20 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+.acflory .frame {
+/**
+     * (optional) wrapper width, specifies width of the slider frame.
+     */
+  width: 100%;
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* line 36 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+.acflory .slides {
+  display: block;
+}
+
+/* line 40 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+.acflory li {
+  position: relative;
+  display: inline-block;
+/**
+     * (optional) if the content inside the slide element has a defined size.
+     */
+}
+
+/* line 50 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+.acflory .prev,
+.acflory .next {
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  display: block;
+  cursor: pointer;
+  z-index: 3;
+  width: calc(20vw - 50px);
+}
+
+/* line 59 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+.acflory .prev svg,
+.acflory .next svg {
+  fill: #000;
+}
+
+/* line 64 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+.acflory .next {
+  right: 0;
+  text-align: left;
+  margin-right: 10px;
+}
+
+/* line 70 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+.acflory .prev {
+  left: 0;
+  text-align: right;
+  margin-left: 10px;
+}
+
+/* line 76 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+.acflory .next svg,
+.acflory .prev svg {
+  width: 25px;
+}
+
+/* line 80 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+.acflory .item {
+  width: 60vw;
+  height: 635px;
+  background-size: cover;
+  background-position: center;
+  background-color: #ccc;
+  margin: 0 50px;
+  transform: translateX(33.333%);
+  vertical-align: top;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+
+/* line 92 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+  .acflory .item {
+    height: 250px;
+  }
+}
+
+/* line 96 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+
+/* line 104 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+
+/* line 108 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+.acflory .item-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 116 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+.acflory .item-desc {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  text-align: left;
+  font-size: 28px;
+  color: #000;
+}
+
+/* line 126 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+.acflory.fullscreen {
+  position: fixed;
+  background: rgba(0,0,0,0.95);
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 135 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+.acflory.fullscreen .item {
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: none;
+  margin: 0;
+  background: #000;
+}
+
+/* line 144 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+.acflory.fullscreen .item-desc {
+  color: #fff;
+}
+
+/* line 150 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+.acflory.fullscreen .prev,
+.acflory.fullscreen .next {
+  background: rgba(0,0,0,0);
+  height: 100%;
+  top: 0;
+  margin: 0;
+  line-height: 100vh;
+  text-align: center;
+  transition: 0.3s ease-in;
+}
+
+/* line 159 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+.acflory.fullscreen .prev svg,
+.acflory.fullscreen .next svg {
+  fill: #fff;
+  width: 50px;
+}
+
+/* line 164 : /mnt/data/code/sites/polarhouse.local/htdocs/wp-content/plugins/acf-lory-gallery/src/main.styl */
+.acflory.fullscreen .prev:hover,
+.acflory.fullscreen .next:hover,
+.acflory.fullscreen .prev:focus,
+.acflory.fullscreen .next:focus {
+  background: rgba(0,0,0,0.7);
+}
+/*# sourceMappingURL=bundle.css.map */
