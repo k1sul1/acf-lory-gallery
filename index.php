@@ -2,6 +2,7 @@
 /*
 Plugin Name: ACF Lory gallery
 Author: Christian Nikkanen
+Version: 1.0.0
 */
 
 defined("ABSPATH") or die("Wat r u doing?");
@@ -29,7 +30,10 @@ add_action("init", function() {
 
   // Flush rules *once* after creating a new post type or taxonomy, don't
   // leave on because the operation is expensive.
-  flush_rewrite_rules();
+  if (get_option("acf-lory-gallery-flushed", false)) {
+    flush_rewrite_rules();
+    update_option("acf-lory-gallery-flushed", true);
+  }
 });
 
 add_action("wp_enqueue_scripts", function() {
